@@ -7,12 +7,12 @@ git_source(:github) do |repo_name|
 end
 
 gem 'pg', '~> 0.18'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 5.1.0'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'figaro'
 gem 'jquery-rails'
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.7'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
@@ -24,7 +24,7 @@ group :development do
   gem 'annotate'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'listen', '~> 3.0.5'
+  gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'pry-rails'
   gem 'sextant'
   gem 'spring'
