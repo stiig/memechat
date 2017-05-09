@@ -1,6 +1,8 @@
 App.messages = App.cable.subscriptions.create('MessagesChannel', {
     received: function (data) {
-        return $('#messages').append(this.renderMessage(data));
+        var messages = $('.messages');
+        messages.append(this.renderMessage(data));
+        messages.scrollTop(messages[0].scrollHeight);
     },
 
     renderMessage: function (data) {
