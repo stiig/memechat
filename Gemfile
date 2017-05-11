@@ -26,6 +26,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'pry-rails'
+  gem 'rubocop', require: false
   gem 'sextant'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

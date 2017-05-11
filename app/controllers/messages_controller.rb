@@ -1,11 +1,12 @@
-class MessagesController < ApplicationController
+# frozen_string_literal: true
 
+class MessagesController < ApplicationController
   def create
     message = Message.new(message_params)
-    if message.save
-      MessagesChannel.broadcast_to(Message, message: message.content)
-      head :ok
-    end
+    return unless message.save
+
+    MessagesChannel.broadcast_to(Message, message: message.content)
+    head :ok
   end
 
   private
