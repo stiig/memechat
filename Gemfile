@@ -14,6 +14,7 @@ gem 'figaro'
 gem 'jquery-rails'
 gem 'puma', '~> 3.7'
 gem 'uglifier', '>= 1.3.0'
+gem 'webpacker', github: 'rails/webpacker'
 
 group :development, :test do
   gem 'awesome_print'
