@@ -13,6 +13,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'figaro'
 gem 'jquery-rails'
 gem 'puma', '~> 3.7'
+gem 'slim-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker', github: 'rails/webpacker'
 
@@ -28,7 +29,6 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'pry-rails'
   gem 'rubocop', require: false
-  gem 'sextant'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
