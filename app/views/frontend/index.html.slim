@@ -1,1 +1,10 @@
-
+.wrapper
+  .container
+    .messages
+      h2 Your messages will be here
+    div
+      = form_for :message, remote: true do |f|
+        = f.label :your_message
+        | :
+        = f.text_area :content
+        = f.submit 'send'
