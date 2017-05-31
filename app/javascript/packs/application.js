@@ -9,10 +9,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-const ChatBoxTitle = props => (
-    <h2>Your messages will be here</h2>
-)
+import ChatBoxTitle from './chat_box_title'
 
 const ChatMessagesContainer = props => (
     <div className="messages">
