@@ -9,13 +9,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ChatBoxTitle from './chat_box_title'
-
-const ChatMessagesContainer = props => (
-    <div className="messages">
-        <ChatBoxTitle/>
-    </div>
-)
+import ChatMessagesContainer from './chat_messages_container'
 
 const ChatFormSubmit = props => (
     <input type="submit" name="commit" value="send" data-disable-with="send"/>
