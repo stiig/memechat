@@ -10,10 +10,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import ChatMessagesContainer from './chat_messages_container'
-
-const ChatFormSubmit = props => (
-    <input type="submit" name="commit" value="send" data-disable-with="send"/>
-)
+import ChatFormSubmit from './chat_form_submit'
 
 const ChatFormTextarea = props => (
     <div>
