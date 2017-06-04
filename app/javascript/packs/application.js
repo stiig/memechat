@@ -10,25 +10,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import ChatMessagesContainer from './chat_messages_container'
-import ChatFormSubmit from './chat_form_submit'
-
-const ChatFormTextarea = props => (
-    <div>
-        <label htmlFor="message_your_message">
-            Your message: <textarea name="message[content]" id="message_content" defaultValue=''/>
-        </label>
-        <ChatFormSubmit/>
-    </div>
-)
-
-const ChatForm = props => (
-    <div>
-        <form action={props.action} acceptCharset="UTF-8" data-remote="true" method="post">
-            <input name="utf8" type="hidden" value="&#x2713;"/>
-            <ChatFormTextarea/>
-        </form>
-    </div>
-)
+import ChatForm from './chat_form'
 
 const ChatBoxContainer = props => (
     <div className="container">
