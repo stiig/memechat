@@ -9,15 +9,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ChatMessagesContainer from './chat_messages_container'
-import ChatForm from './chat_form'
-
-const ChatBoxContainer = props => (
-    <div className="container">
-        <ChatMessagesContainer/>
-        <ChatForm action="/messages"/>
-    </div>
-)
+import ChatBoxContainer from './chat_box_container'
 
 const ChatBoxWrapperContainer = props => (
     <div className="wrapper">
@@ -32,6 +24,6 @@ const ChatBox = props => (
 document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(
         <ChatBox/>,
-        document.body.appendChild(document.createElement('div')),
+        document.body.appendChild(document.createElement('div'))
     )
 })
