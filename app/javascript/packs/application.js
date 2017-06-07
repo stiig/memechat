@@ -9,11 +9,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ChatBoxWrapperContainer from './chat_box_wrapper_container'
-
-const ChatBox = props => (
-    <ChatBoxWrapperContainer/>
-)
+import ChatBox from './chat_box'
 
 document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(
