@@ -2,6 +2,6 @@
 
 class MainController < ApplicationController
   def index
-    @message = Message.new
+    render html: '', layout: true
   end
 end
