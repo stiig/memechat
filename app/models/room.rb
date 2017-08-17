@@ -5,4 +5,7 @@ class Room < ApplicationRecord
 
   has_many :room_messages, dependent: :destroy
   has_many :messages, through: :room_messages
+
+  has_many :participants, dependent: :destroy
+  has_many :users, through: :participants
 end
