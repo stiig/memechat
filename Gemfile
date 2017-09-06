@@ -15,7 +15,7 @@ gem 'jquery-rails'
 gem 'puma', '~> 3.7'
 gem 'slim-rails'
 gem 'uglifier', '>= 1.3.0'
-gem 'webpacker', '~> 2.0'
+gem 'webpacker', '~> 3.0'
 
 group :development, :test do
   gem 'awesome_print'
