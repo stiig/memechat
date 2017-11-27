@@ -6,7 +6,7 @@ const ChatFormTextarea = props => (
         <label htmlFor="message_your_message">
             Your message: <textarea name="message[content]" id="message_content" defaultValue=''/>
         </label>
-        <ChatFormSubmit/>
+        <ChatFormSubmit onSubmitHandler={props.onSubmitHandler}/>
     </div>
 )
 
