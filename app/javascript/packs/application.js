@@ -12,8 +12,8 @@ import ReactDOM from 'react-dom'
 import ChatBox from './chat_box'
 
 document.addEventListener('DOMContentLoaded', () => {
-    ReactDOM.render(
-        <ChatBox/>,
-        document.body.appendChild(document.createElement('div'))
-    )
-})
+  ReactDOM.render(
+    <ChatBox/>,
+    document.body.appendChild(document.createElement('div'))
+  )
+});
