@@ -6,7 +6,7 @@ App.messages = App.cable.subscriptions.create('MessagesChannel', {
     },
 
     renderMessage: function (data) {
-      const p = document.createElement('p');
+      var p = document.createElement('p');
       p.innerHTML = data.message;
       return p;
     }
