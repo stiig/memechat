@@ -7,11 +7,10 @@ class ChatForm extends React.Component {
     this.state = {value: ""}
   }
 
-  onSubmitHandler = (e) => {
+  onSubmitHandler = async (e) => {
     e.preventDefault();
 
     const form = new FormData(e.target);
-
 
     const reqOptions = {
       method: "POST",
@@ -20,12 +19,8 @@ class ChatForm extends React.Component {
       headers: new Headers({'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').content})
     };
 
-    fetch(e.target.action, reqOptions)
-      .then(response => {
-        if (response.ok) {
-          this.setState({value: ""})
-        }
-      });
+    let response = await fetch(e.target.action, reqOptions);
+    if (response.ok) this.setState({value: ""})
   };
 
   textAreaHandler = e => {
