@@ -6,10 +6,10 @@ const ChatFormTextarea = props => (
   <div>
     <label htmlFor="message_your_message">
       Your message: <TextField name="message[content]"
-                              id="message_content"
-                              value={props.value}
-                              onChange={props.onChangeHandler}
-                              />
+                               id="message_content"
+                               value={props.value}
+                               onChange={props.onChangeHandler}
+                    />
     </label>
     <ChatFormSubmit/>
   </div>
